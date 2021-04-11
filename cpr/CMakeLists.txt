@@ -8,6 +8,7 @@ add_library(cpr
     curl_container.cpp
     curlholder.cpp
     error.cpp
+    hub.cpp
     multipart.cpp
     parameters.cpp
     payload.cpp

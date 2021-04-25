@@ -20,6 +20,12 @@ add_library(cpr
     response.cpp
     )
 
+if (WIN32)
+target_sources(cpr PRIVATE
+    wepoll/wepoll.c
+    )
+endif()
+
 add_library(cpr::cpr ALIAS cpr)
 
 target_link_libraries(cpr PUBLIC CURL::libcurl) # todo should be private, but first dependencys in ssl_options need to be removed

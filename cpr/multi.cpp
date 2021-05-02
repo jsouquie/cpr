@@ -3,7 +3,7 @@
 #include "wepoll/wepoll.h"
 #endif
 
-#include "cpr/hub.h"
+#include "cpr/multi.h"
 #include "cpr/session.h"
 #include "curl/multi.h"
 #include <algorithm>
